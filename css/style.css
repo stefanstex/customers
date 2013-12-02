@@ -1,0 +1,49 @@
+body{
+    margin-bottom: 80px;
+}
+.navbar-brand{
+    padding-bottom: 0;
+}
+#submitCustomer{
+	margin-top: 4px;
+}
+.card {
+    background-color: #EFEFEF;
+    border: 1px solid #000000;
+    margin-bottom: 20px;
+	min-width:120px;
+}
+
+.cardHeader {
+    background-color: #006DCC;
+    color: #FFFFFF;
+    font-size: 14pt;
+	padding: 5px;
+}
+.cardBody {
+    padding-left: 5px;
+}
+.cardContainer{
+	width: 100%;
+}
+.cardClose {
+    font-weight: bold;
+    margin-right: 5px;
+}
+.table-bordered tr td{
+	width: 23%;
+}
+.table-bordered thead{
+	background-color: #006DCC;
+	color: #fff;
+}
+.table-bordered thead th{
+	cursor: pointer;
+}
+.info{
+	background-color: #D9EDF7;
+}
+.logo-img{
+	width: 27px;
+	margin-right: 3px;
+}

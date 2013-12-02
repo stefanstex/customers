@@ -1,0 +1,51 @@
+﻿<div class="container">
+	<header>
+		<h3>Customers</h3>
+	</header>
+	<div class="row">
+		<form>
+			<div class="form-group">
+				<div class="col-md-2">
+					<label for="firstName">First Name:</label>
+					<br />
+					<input data-ng-model="newCustomer.firstName" type="text" id="firstName" class="form-control" placeholder="First Name">
+				</div>
+				<div class="col-md-2">
+					<label for="lastName">Last Name:</label>
+					<br />
+					<input data-ng-model="newCustomer.lastName" type="text" id="lastName" class="form-control" placeholder="Last Name">
+				</div>
+				<div class="col-md-2">
+					<label for="city">Address:</label>
+					<br />
+					<input data-ng-model="newCustomer.address" type="text" id="address" class="form-control" placeholder="Address">
+				</div>
+				<div class="col-md-2">
+					<label for="city">City:</label>
+					<br />
+					<input data-ng-model="newCustomer.city" type="text" id="city" class="form-control" placeholder="Customer City">
+				</div>
+				<div class="col-md-4">
+					<br />
+					<button id="submitCustomer" class="btn btn-primary pull-left" type="button" 
+						data-ng-disabled="!newCustomer.firstName || !newCustomer.lastName || !newCustomer.address || !newCustomer.city" 
+						data-ng-click="insertCustomer()">Add Customer</button>
+				</div>
+			</div>
+		</form>
+	</div>
+	
+	<br /><br />
+	<div>
+		<div class="row cardContainer">
+			<div class="col-sm-3" data-ng-repeat="customer in customers | orderBy:'lastName'">
+				<div class="card">
+					<button class="btn close cardClose" data-ng-click="deleteCustomer(customer.id)">&times;</button>
+					<div class="cardHeader">{{customer.firstName + ' ' + customer.lastName}}</div>
+					<div class="cardBody">{{customer.city}}</div>
+					<a href="#/customerorders/{{customer.id}}" class="cardBody btn-link">View {{ customer.orders.length }} Orders</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
