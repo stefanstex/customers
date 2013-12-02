@@ -12,7 +12,7 @@
 		<div class="container">
 			
 			<div class="navbar-header">
-				<a href="#" class="navbar-brand"><img src="images/people.jpeg" alt="logo" class="logo-img">1Customer Manager</a>
+				<a href="#" class="navbar-brand"><img src="images/people.jpeg" alt="logo" class="logo-img">Customer Manager</a>
 				
 				<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
 					<span class="icon-bar"></span>
